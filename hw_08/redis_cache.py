@@ -1,5 +1,5 @@
 import redis
 from redis_lru import RedisLRU
 
-client = redis.StrictRedis(host='localhost', port=27017, password=None)
+client = redis.StrictRedis(host='localhost', port=6379, password=None)
 cache: RedisLRU = RedisLRU(client)
