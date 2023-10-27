@@ -2,6 +2,8 @@ from db import connect
 from models import Author, Quote
 from redis_cache import cache
 
+# connect()
+
 
 @cache
 def search_quotes(query: str):
