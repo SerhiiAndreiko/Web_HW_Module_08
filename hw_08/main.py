@@ -2,7 +2,7 @@ from db import connect
 from models import Author, Quote
 from redis_cache import cache
 
-# connect()
+connect()
 
 
 @cache

@@ -1,8 +1,8 @@
 import json
 from models import Author, Quote
-from db import connect
+from mongoengine import connect
 
-connect()
+connect('my_database', host='mongodb+srv://fantom:fantomDB@cluster0.xbtnffb.mongodb.net/test?retryWrites=true')
 
 with open('authors.json', 'r', encoding='utf-8') as authors_file:
     authors_data = json.load(authors_file)
